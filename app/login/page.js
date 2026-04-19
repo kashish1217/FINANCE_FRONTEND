@@ -11,7 +11,7 @@ export default function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await API.post("/api/token/", form);
+      const res = await API.post("/token/", form);
 
       localStorage.setItem("token", res.data.access);
 
