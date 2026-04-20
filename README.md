@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+💰 Finance Dashboard Frontend
 
-## Getting Started
+  A modern SaaS-style finance dashboard built with Next.js, connected to a Django REST backend.
 
-First, run the development server:
+🚀 Live Website
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  🔗 https://financefrontendzor.netlify.app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔗 Backend API
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  👉 https://finance-backend-ovlz.onrender.com/
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧠 Features
+  🔐 JWT Authentication (Login)
+  📊 Dashboard analytics
+  💸 Add / view transactions
+  📈 Charts & insights
+  🌙 SaaS-style UI
 
-## Learn More
+⚙️ Tech Stack
+  Next.js (App Router)
+  React
+  Tailwind CSS
+  Axios
+  Netlify (deployment)
 
-To learn more about Next.js, take a look at the following resources:
+🔗 Backend Repository
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  👉 https://github.com/kashish1217/FINANCE_BACKEND
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🛠️ Local Setup
+  git clone <your-frontend-repo>
+  cd finance_frontend
+  npm install
+  npm run dev
 
-## Deploy on Vercel
+🌍 Environment Variables
+  Create .env.local
+  NEXT_PUBLIC_API_URL=https://finance-backend-ovlz.onrender.com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔐 Authentication Flow
+  User logs in → /api/token/
+  Token stored in localStorage
+  Token sent in headers:
+  Authorization: Bearer <token>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⚠️ Important Notes
+  Backend must be running (or deployed)
+  CORS must be enabled in backend
+  Always include /api in requests
